@@ -3,16 +3,16 @@ using TCC_2025.Banco_de_Dados;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Configura��o do banco
+
 builder.Services.AddDbContext<ApplicationDataContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// HABILITA CORS
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -25,7 +25,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure o pipeline HTTP
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -34,7 +34,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// ATIVA O CORS AQUI � antes do authorization
+
+// app.UseDefaultFiles(); // procura por index.html
+// app.UseStaticFiles();  // serve arquivos da pasta wwwroot
 app.UseCors("AllowAll");
 
 app.UseAuthorization();

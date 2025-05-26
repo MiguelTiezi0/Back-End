@@ -11,8 +11,8 @@ using TCC_2025.Banco_de_Dados;
 namespace TCC_2025.Migrations
 {
     [DbContext(typeof(ApplicationDataContext))]
-    [Migration("20250507175309_Update Product")]
-    partial class UpdateProduct
+    [Migration("20250513115225_Tabelas2")]
+    partial class Tabelas2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -115,6 +115,9 @@ namespace TCC_2025.Migrations
 
                     b.Property<int>("CategoriaId")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Cor")
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("DataCadastro")
                         .HasColumnType("TEXT");

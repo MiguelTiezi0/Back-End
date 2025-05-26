@@ -113,6 +113,9 @@ namespace TCC_2025.Migrations
                     b.Property<int>("CategoriaId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Cor")
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("DataCadastro")
                         .HasColumnType("TEXT");
 

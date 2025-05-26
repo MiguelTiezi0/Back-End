@@ -1,4 +1,4 @@
-@TCC_2025_HostAddress = http://localhost:5137
+@TCC_2025_HostAddress = http://localhost:7172
 
 GET {{TCC_2025_HostAddress}}/Program/
 Accept: application/json

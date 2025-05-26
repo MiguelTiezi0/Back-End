@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\migrations\\20250507175309_update product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:migrations\\20250507175309_update product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\tcc_2025.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:tcc_2025.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\tcc_2025.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:tcc_2025.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\migrations\\20250513115225_tabelas2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:migrations\\20250513115225_tabelas2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -28,10 +52,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,10 +66,6 @@
       "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\migrations\\20250502143824_atualnova.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:migrations\\20250502143824_atualnova.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\banco de dados\\applicationdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:banco de dados\\applicationdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -57,15 +73,7 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vitor\\OneDrive\\\u00C1rea de Trabalho\\Nova pasta\\TCC_2025\\Migrations\\20250502143300_Nova 2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\migrations\\20250502130934_nova.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:migrations\\20250502130934_nova.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vitor\\OneDrive\\\u00C1rea de Trabalho\\Nova pasta\\TCC_2025\\Migrations\\20250502130557_Nova.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vitor\\OneDrive\\\u00C1rea de Trabalho\\Nova pasta\\TCC_2025\\Migrations\\20250502125927_Atual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -73,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|c:\\users\\srmig\\onedrive\\\u00E1rea de trabalho\\tcc\\trabalhos\\trabalho\\back-end\\tcc_2025.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{4010467B-2E2E-4CD3-A889-C941E0F70BDD}|TCC_2025.csproj|solutionrelative:tcc_2025.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -110,7 +114,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-17T12:41:39.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "TCC_2025",
+              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\TCC_2025.csproj",
+              "RelativeDocumentMoniker": "TCC_2025.csproj",
+              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\TCC_2025.csproj",
+              "RelativeToolTip": "TCC_2025.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-17T12:41:35.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAADwvyUAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T20:07:35.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Funcionario.cs",
               "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Models\\Funcionario.cs",
               "RelativeDocumentMoniker": "Models\\Funcionario.cs",
@@ -122,80 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TCC_2025.csproj",
-              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\TCC_2025.csproj",
-              "RelativeDocumentMoniker": "TCC_2025.csproj",
-              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\TCC_2025.csproj",
-              "RelativeToolTip": "TCC_2025.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-02T14:35:19.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAADwvywAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T20:07:35.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "Models\\Produto.cs",
-              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Models\\Produto.cs",
-              "RelativeToolTip": "Models\\Produto.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T20:27:14.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "Controllers\\ProdutoController.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAswAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T20:43:15.279Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250507175309_Update Product.cs",
-              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Migrations\\20250507175309_Update Product.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250507175309_Update Product.cs",
-              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Migrations\\20250507175309_Update Product.cs",
-              "RelativeToolTip": "Migrations\\20250507175309_Update Product.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T17:53:09.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Microsoft.PackageDependencyResolution.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
-              "ViewState": "AQIAAPoAAAAAAAAAAAAqwAkBAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-05-07T17:47:53.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "FuncionarioController.cs",
               "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Controllers\\FuncionarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\FuncionarioController.cs",
@@ -207,7 +176,105 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-07T20:07:35.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TCC_2025.http",
+              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\TCC_2025.http",
+              "RelativeDocumentMoniker": "TCC_2025.http",
+              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\TCC_2025.http",
+              "RelativeToolTip": "TCC_2025.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-04-07T20:07:00.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "Controllers\\ProdutoController.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T20:43:15.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Models\\Produto.cs",
+              "RelativeToolTip": "Models\\Produto.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T20:27:14.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250513115225_Tabelas2.cs",
+              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Migrations\\20250513115225_Tabelas2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250513115225_Tabelas2.cs",
+              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Migrations\\20250513115225_Tabelas2.cs",
+              "RelativeToolTip": "Migrations\\20250513115225_Tabelas2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:52:25.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Venda.cs",
+              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Models\\Venda.cs",
+              "RelativeDocumentMoniker": "Models\\Venda.cs",
+              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Models\\Venda.cs",
+              "RelativeToolTip": "Models\\Venda.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T17:01:26.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TCC_2025.csproj",
+              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\TCC_2025.csproj",
+              "RelativeDocumentMoniker": "TCC_2025.csproj",
+              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\TCC_2025.csproj",
+              "RelativeToolTip": "TCC_2025.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-02T14:35:19.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AQIAAPoAAAAAAAAAAAAqwAkBAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-07T17:47:53.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "Models\\Categoria.cs",
@@ -219,19 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20250502143824_AtualNova.cs",
-              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Migrations\\20250502143824_AtualNova.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250502143824_AtualNova.cs",
-              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Migrations\\20250502143824_AtualNova.cs",
-              "RelativeToolTip": "Migrations\\20250502143824_AtualNova.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T14:38:24.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
@@ -243,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "Models\\Cliente.cs",
@@ -255,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "ApplicationDataContext.cs",
               "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Banco de Dados\\ApplicationDataContext.cs",
               "RelativeDocumentMoniker": "Banco de Dados\\ApplicationDataContext.cs",
@@ -267,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "20250502143300_Nova 2.cs",
               "DocumentMoniker": "C:\\Users\\vitor\\OneDrive\\\u00C1rea de Trabalho\\Nova pasta\\TCC_2025\\Migrations\\20250502143300_Nova 2.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\vitor\\OneDrive\\\u00C1rea de Trabalho\\Nova pasta\\TCC_2025\\Migrations\\20250502143300_Nova 2.cs",
@@ -278,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "20250502130557_Nova.cs",
               "DocumentMoniker": "C:\\Users\\vitor\\OneDrive\\\u00C1rea de Trabalho\\Nova pasta\\TCC_2025\\Migrations\\20250502130557_Nova.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\vitor\\OneDrive\\\u00C1rea de Trabalho\\Nova pasta\\TCC_2025\\Migrations\\20250502130557_Nova.cs",
@@ -290,31 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "20250502130934_Nova.cs",
-              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Migrations\\20250502130934_Nova.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250502130934_Nova.cs",
-              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Migrations\\20250502130934_Nova.cs",
-              "RelativeToolTip": "Migrations\\20250502130934_Nova.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCQAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T13:09:35.005Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-07T20:07:35.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "CategoriaController.cs",
               "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\Controllers\\CategoriaController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoriaController.cs",
@@ -326,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "20250502125927_Atual.cs",
               "DocumentMoniker": "C:\\Users\\vitor\\OneDrive\\\u00C1rea de Trabalho\\Nova pasta\\TCC_2025\\Migrations\\20250502125927_Atual.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\vitor\\OneDrive\\\u00C1rea de Trabalho\\Nova pasta\\TCC_2025\\Migrations\\20250502125927_Atual.cs",
@@ -335,18 +366,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-02T12:59:27.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "TCC_2025.http",
-              "DocumentMoniker": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\TCC_2025.http",
-              "RelativeDocumentMoniker": "TCC_2025.http",
-              "ToolTip": "C:\\Users\\srmig\\OneDrive\\\u00C1rea de Trabalho\\TCC\\Trabalhos\\Trabalho\\Back-End\\TCC_2025.http",
-              "RelativeToolTip": "TCC_2025.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-04-07T20:07:00.777Z"
             }
           ]
         }
