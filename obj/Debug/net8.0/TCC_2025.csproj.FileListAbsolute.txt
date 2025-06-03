@@ -1229,7 +1229,6 @@ C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\bin\De
 C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\bin\Debug\net8.0\System.Drawing.Common.dll
-C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\bin\Debug\net8.0\System.Formats.Asn1.dll
 C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\bin\Debug\net8.0\System.IO.Pipelines.dll
 C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
@@ -1437,3 +1436,4 @@ C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\obj\De
 C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\obj\Debug\net8.0\TCC_2025.pdb
 C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\obj\Debug\net8.0\TCC_2025.genruntimeconfig.cache
 C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\obj\Debug\net8.0\ref\TCC_2025.dll
+C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\bin\Debug\net8.0\System.Formats.Asn1.dll
