@@ -2,9 +2,11 @@
 {
     public class Itens_Venda
     {
-        public int Id { get; set; }
-        public int VendaId { get; set; }
-        public int ProdutoId { get; set; }
-        public decimal ValorDoItem { get; set; }
+            public int Id { get; set; }
+            public int VendaId { get; set; }
+            public int ProdutoId { get; set; }
+            public int Quantidade { get; set; }
+            public decimal ValorDoItem { get; set; }
+
     }
 }

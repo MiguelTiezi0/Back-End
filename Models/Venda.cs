@@ -9,6 +9,9 @@
         public decimal ValorTotal { get; set; }
         public string[]? FormaDePagamento { get; set; }
         public DateTime DataVenda { get; set; }
-            
+
+     
+
+
     }
 }
