@@ -11,8 +11,8 @@ using TCC_2025.Banco_de_Dados;
 namespace TCC_2025.Migrations
 {
     [DbContext(typeof(ApplicationDataContext))]
-    [Migration("20250606114311_Novas Tabelas")]
-    partial class NovasTabelas
+    [Migration("20250615122959_Tables")]
+    partial class Tables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -64,6 +64,15 @@ namespace TCC_2025.Migrations
                     b.Property<string>("Telefone")
                         .HasColumnType("TEXT");
 
+                    b.Property<decimal>("TotalDevido")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("TotalGasto")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("TotalPago")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.ToTable("Cliente");
@@ -111,6 +120,9 @@ namespace TCC_2025.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("ProdutoId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Quantidade")
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("ValorDoItem")

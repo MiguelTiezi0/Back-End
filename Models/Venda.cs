@@ -7,7 +7,11 @@
         public int ClienteId { get; set; }
         public int TotalDeItens { get; set; }
         public decimal ValorTotal { get; set; }
+        public decimal TotalPago { get; set; }
+
         public string[]? FormaDePagamento { get; set; }
+        public decimal TotalDeVezes { get; set; }
+
         public DateTime DataVenda { get; set; }
 
      

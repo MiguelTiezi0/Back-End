@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TCC_2025.Migrations
 {
     /// <inheritdoc />
-    public partial class Tabelas2 : Migration
+    public partial class Tables : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -37,7 +37,10 @@ namespace TCC_2025.Migrations
                     Telefone = table.Column<string>(type: "TEXT", nullable: true),
                     Bairro = table.Column<string>(type: "TEXT", nullable: true),
                     DataNascimento = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    LimiteDeCrédito = table.Column<decimal>(type: "TEXT", nullable: false)
+                    LimiteDeCrédito = table.Column<decimal>(type: "TEXT", nullable: false),
+                    TotalGasto = table.Column<decimal>(type: "TEXT", nullable: false),
+                    TotalPago = table.Column<decimal>(type: "TEXT", nullable: false),
+                    TotalDevido = table.Column<decimal>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -65,6 +68,22 @@ namespace TCC_2025.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Itens_Venda",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    VendaId = table.Column<int>(type: "INTEGER", nullable: false),
+                    ProdutoId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Quantidade = table.Column<int>(type: "INTEGER", nullable: false),
+                    ValorDoItem = table.Column<decimal>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Itens_Venda", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Produto",
                 columns: table => new
                 {
@@ -85,6 +104,24 @@ namespace TCC_2025.Migrations
                 {
                     table.PrimaryKey("PK_Produto", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Venda",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    FuncionarioId = table.Column<int>(type: "INTEGER", nullable: false),
+                    ClienteId = table.Column<int>(type: "INTEGER", nullable: false),
+                    TotalDeItens = table.Column<int>(type: "INTEGER", nullable: false),
+                    ValorTotal = table.Column<decimal>(type: "TEXT", nullable: false),
+                    FormaDePagamento = table.Column<string>(type: "TEXT", nullable: true),
+                    DataVenda = table.Column<DateTime>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Venda", x => x.Id);
+                });
         }
 
         /// <inheritdoc />
@@ -100,7 +137,13 @@ namespace TCC_2025.Migrations
                 name: "Funcionario");
 
             migrationBuilder.DropTable(
+                name: "Itens_Venda");
+
+            migrationBuilder.DropTable(
                 name: "Produto");
+
+            migrationBuilder.DropTable(
+                name: "Venda");
         }
     }
 }

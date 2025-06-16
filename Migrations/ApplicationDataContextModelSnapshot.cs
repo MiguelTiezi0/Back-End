@@ -61,6 +61,15 @@ namespace TCC_2025.Migrations
                     b.Property<string>("Telefone")
                         .HasColumnType("TEXT");
 
+                    b.Property<decimal>("TotalDevido")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("TotalGasto")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("TotalPago")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.ToTable("Cliente");
@@ -185,6 +194,12 @@ namespace TCC_2025.Migrations
 
                     b.Property<int>("TotalDeItens")
                         .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("TotalDeVezes")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("TotalPago")
+                        .HasColumnType("TEXT");
 
                     b.Property<decimal>("ValorTotal")
                         .HasColumnType("TEXT");

@@ -11,7 +11,8 @@
         public string? Bairro { get; set; }
         public DateTime DataNascimento { get; set; }
         public decimal LimiteDeCrédito { get; set; }
-
- 
+        public decimal TotalGasto { get; set; }
+        public decimal TotalPago { get; set; }
+        public decimal TotalDevido { get; set; }
     }
 }
