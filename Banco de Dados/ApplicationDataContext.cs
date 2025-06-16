@@ -13,6 +13,8 @@ namespace TCC_2025.Banco_de_Dados
         public DbSet<Cliente> Cliente { get; set; }
         public DbSet<Venda> Venda { get; set; }
         public DbSet<Itens_Venda> Itens_Venda { get; set; }
+        public DbSet<Pagamento> Pagamento { get; set; }
+
 
 
 
