@@ -11,8 +11,8 @@ using TCC_2025.Banco_de_Dados;
 namespace TCC_2025.Migrations
 {
     [DbContext(typeof(ApplicationDataContext))]
-    [Migration("20250615131224_Update em Vendas")]
-    partial class UpdateemVendas
+    [Migration("20250620114445_Tabelas")]
+    partial class Tabelas
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -136,6 +136,35 @@ namespace TCC_2025.Migrations
                     b.ToTable("Itens_Venda");
                 });
 
+            modelBuilder.Entity("TCC_2025.Models.Pagamento", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("DataPagamento")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("FuncionarioId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ToTalDeVezes")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("TotalPago")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("VendaId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Pagamento");
+                });
+
             modelBuilder.Entity("TCC_2025.Models.Produto", b =>
                 {
                     b.Property<int>("Id")
@@ -147,6 +176,9 @@ namespace TCC_2025.Migrations
 
                     b.Property<int>("CategoriaId")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("CodigoDeBarras")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Cor")
                         .HasColumnType("TEXT");

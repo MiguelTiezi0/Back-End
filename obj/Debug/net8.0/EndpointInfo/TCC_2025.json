@@ -1115,6 +1115,29 @@
         }
       }
     },
+    "/api/Produto/GerarEtiquetaPorId/{id}": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Venda": {
       "get": {
         "tags": [
@@ -1517,6 +1540,10 @@
           "dataCadastro": {
             "type": "string",
             "format": "date-time"
+          },
+          "codigoDeBarras": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

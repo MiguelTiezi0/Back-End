@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TCC_2025.Migrations
 {
     /// <inheritdoc />
-    public partial class Tables : Migration
+    public partial class Tabelas : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -84,6 +84,24 @@ namespace TCC_2025.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Pagamento",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    FuncionarioId = table.Column<int>(type: "INTEGER", nullable: false),
+                    ClienteId = table.Column<int>(type: "INTEGER", nullable: false),
+                    VendaId = table.Column<int>(type: "INTEGER", nullable: false),
+                    TotalPago = table.Column<decimal>(type: "TEXT", nullable: false),
+                    ToTalDeVezes = table.Column<int>(type: "INTEGER", nullable: false),
+                    DataPagamento = table.Column<DateTime>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Pagamento", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Produto",
                 columns: table => new
                 {
@@ -98,7 +116,8 @@ namespace TCC_2025.Migrations
                     PreçoVenda = table.Column<decimal>(type: "TEXT", nullable: false),
                     Ativo = table.Column<bool>(type: "INTEGER", nullable: false),
                     CategoriaId = table.Column<int>(type: "INTEGER", nullable: false),
-                    DataCadastro = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    DataCadastro = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    CodigoDeBarras = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -115,7 +134,9 @@ namespace TCC_2025.Migrations
                     ClienteId = table.Column<int>(type: "INTEGER", nullable: false),
                     TotalDeItens = table.Column<int>(type: "INTEGER", nullable: false),
                     ValorTotal = table.Column<decimal>(type: "TEXT", nullable: false),
+                    TotalPago = table.Column<decimal>(type: "TEXT", nullable: false),
                     FormaDePagamento = table.Column<string>(type: "TEXT", nullable: true),
+                    TotalDeVezes = table.Column<decimal>(type: "TEXT", nullable: false),
                     DataVenda = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
@@ -138,6 +159,9 @@ namespace TCC_2025.Migrations
 
             migrationBuilder.DropTable(
                 name: "Itens_Venda");
+
+            migrationBuilder.DropTable(
+                name: "Pagamento");
 
             migrationBuilder.DropTable(
                 name: "Produto");

@@ -174,6 +174,9 @@ namespace TCC_2025.Migrations
                     b.Property<int>("CategoriaId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("CodigoDeBarras")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Cor")
                         .HasColumnType("TEXT");
 

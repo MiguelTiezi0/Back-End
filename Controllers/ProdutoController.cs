@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using ZXing;
+using ZXing.Common;
+using ZXing.QrCode;
+using System.Drawing;
+using System.Drawing.Imaging;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TCC_2025.Banco_de_Dados;
@@ -104,6 +104,62 @@ namespace TCC_2025.Controllers
         private bool ProdutoExists(int id)
         {
             return _context.Produto.Any(e => e.Id == id);
+        }
+        [HttpGet("GerarEtiquetaPorId/{id}")]
+        public IActionResult GerarEtiquetaPorId(int id)
+        {
+            // 1. Busca o produto no banco de dados
+            var produto = _context.Produto.FirstOrDefault(p => p.Id == id);
+            if (produto == null)
+                return NotFound("Produto não encontrado");
+
+            // 2. Configura o gerador de código de barras
+            var barcodeWriter = new BarcodeWriterPixelData
+            {
+                Format = BarcodeFormat.CODE_128,
+                Options = new EncodingOptions { Height = 100, Width = 300, Margin = 10 }
+            };
+
+            // 3. Gera os pixels do código de barras
+            var pixelData = barcodeWriter.Write(produto.CodigoDeBarras);
+
+            // 4. Converte os pixels para Base64
+            using (var bitmap = new Bitmap(pixelData.Width, pixelData.Height, PixelFormat.Format32bppRgb))
+            using (var ms = new MemoryStream())
+            {
+                // Copia os pixels para o bitmap
+                var bitmapData = bitmap.LockBits(
+                    new Rectangle(0, 0, pixelData.Width, pixelData.Height),
+                    ImageLockMode.WriteOnly,
+                    PixelFormat.Format32bppRgb
+                );
+                try
+                {
+                    System.Runtime.InteropServices.Marshal.Copy(
+                        pixelData.Pixels,
+                        0,
+                        bitmapData.Scan0,
+                        pixelData.Pixels.Length
+                    );
+                }
+                finally
+                {
+                    bitmap.UnlockBits(bitmapData);
+                }
+
+                // Salva o bitmap em MemoryStream como PNG
+                bitmap.Save(ms, ImageFormat.Png);
+                string barcodeBase64 = Convert.ToBase64String(ms.ToArray()); // Conversão crítica!
+
+                // 5. Retorna a resposta
+                return Ok(new
+                {
+                    CodigoBarrasImagem = barcodeBase64, // Agora definido corretamente
+                    NomeProduto = produto.Descricao,
+                    Preco = produto.PreçoVenda,
+                    CodigoBarrasTexto = produto.CodigoDeBarras
+                });
+            }
         }
     }
 }

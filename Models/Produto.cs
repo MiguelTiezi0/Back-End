@@ -13,6 +13,7 @@
         public bool Ativo { get; set; }
         public int CategoriaId { get; set; }
         public DateTime DataCadastro { get; set; }
+        public string? CodigoDeBarras { get; set; }
 
      
 
