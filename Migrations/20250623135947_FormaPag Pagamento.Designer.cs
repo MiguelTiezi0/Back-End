@@ -11,8 +11,8 @@ using TCC_2025.Banco_de_Dados;
 namespace TCC_2025.Migrations
 {
     [DbContext(typeof(ApplicationDataContext))]
-    [Migration("20250615122959_Tables")]
-    partial class Tables
+    [Migration("20250623135947_FormaPag Pagamento")]
+    partial class FormaPagPagamento
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -136,6 +136,41 @@ namespace TCC_2025.Migrations
                     b.ToTable("Itens_Venda");
                 });
 
+            modelBuilder.Entity("TCC_2025.Models.Pagamento", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("DataPagamento")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("Desconto")
+                        .HasColumnType("TEXT");
+
+                    b.PrimitiveCollection<string>("FormaDePagamento")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("FuncionarioId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ToTalDeVezes")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("TotalPago")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("VendaId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Pagamento");
+                });
+
             modelBuilder.Entity("TCC_2025.Models.Produto", b =>
                 {
                     b.Property<int>("Id")
@@ -189,6 +224,9 @@ namespace TCC_2025.Migrations
                     b.Property<DateTime>("DataVenda")
                         .HasColumnType("TEXT");
 
+                    b.Property<decimal>("Desconto")
+                        .HasColumnType("TEXT");
+
                     b.PrimitiveCollection<string>("FormaDePagamento")
                         .HasColumnType("TEXT");
 
@@ -197,6 +235,12 @@ namespace TCC_2025.Migrations
 
                     b.Property<int>("TotalDeItens")
                         .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("TotalDeVezes")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("TotalPago")
+                        .HasColumnType("TEXT");
 
                     b.Property<decimal>("ValorTotal")
                         .HasColumnType("TEXT");

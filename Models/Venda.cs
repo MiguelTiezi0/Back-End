@@ -8,7 +8,9 @@
         public int TotalDeItens { get; set; }
         public decimal ValorTotal { get; set; }
         public decimal TotalPago { get; set; }
+        public string[]? FormaDeDesconto { get; set; }
 
+        public decimal Desconto { get; set; }
         public string[]? FormaDePagamento { get; set; }
         public decimal TotalDeVezes { get; set; }
 

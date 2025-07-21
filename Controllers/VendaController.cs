@@ -85,23 +85,42 @@ namespace TCC_2025.Controllers
             return CreatedAtAction("GetVenda", new { id = venda.Id }, venda);
         }
 
-        // DELETE: api/Venda/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteVenda(int id)
         {
+            // Busca a venda
             var venda = await _context.Venda.FindAsync(id);
             if (venda == null)
-            {
                 return NotFound();
+
+            // Busca os itens da venda
+            var itensVenda = await _context.Itens_Venda
+                .Where(iv => iv.VendaId == id)
+                .ToListAsync();
+
+            // Para cada item, devolve ao estoque
+            foreach (var item in itensVenda)
+            {
+                var produto = await _context.Produto.FindAsync(item.ProdutoId);
+                if (produto != null)
+                {
+                    produto.Quantidade += item.Quantidade;
+                }
             }
 
+            // Remove os itens da venda
+            _context.Itens_Venda.RemoveRange(itensVenda);
+
+            // Remove a venda
             _context.Venda.Remove(venda);
+
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool VendaExists(int id)
+
+private bool VendaExists(int id)
         {
             return _context.Venda.Any(e => e.Id == id);
         }

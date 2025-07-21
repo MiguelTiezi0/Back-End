@@ -6,7 +6,11 @@
         public int FuncionarioId { get; set; }
         public int ClienteId { get; set; }
         public int VendaId { get; set; }
+
         public decimal TotalPago { get; set; }
+
+        public decimal Desconto { get; set; }
+        public string[]? FormaDePagamento { get; set; }
         public int ToTalDeVezes { get; set; }
         public DateTime DataPagamento { get; set; }
 

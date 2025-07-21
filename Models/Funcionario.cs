@@ -6,6 +6,9 @@
         public string? Nome { get; set; }
         public string? CPF { get; set; }
         public string? Endereço { get; set; }
+        public string? Bairro { get; set; }
+        public string? NumeroDaCasa { get; set; }
+
         public DateTime DataContratação { get; set; }
         public string? Telefone { get; set; }
         public decimal Salário { get; set; }

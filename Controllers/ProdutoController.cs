@@ -48,27 +48,16 @@ namespace TCC_2025.Controllers
         public async Task<IActionResult> PutProduto(int id, Produto produto)
         {
             if (id != produto.Id)
-            {
                 return BadRequest();
-            }
 
-            _context.Entry(produto).State = EntityState.Modified;
+            var produtoDb = await _context.Produto.FindAsync(id);
+            if (produtoDb == null)
+                return NotFound();
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ProdutoExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            produtoDb.Quantidade = produto.Quantidade;
+            // Atualize outros campos se necessário
+
+            await _context.SaveChangesAsync();
 
             return NoContent();
         }

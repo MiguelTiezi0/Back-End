@@ -11,8 +11,8 @@ using TCC_2025.Banco_de_Dados;
 namespace TCC_2025.Migrations
 {
     [DbContext(typeof(ApplicationDataContext))]
-    [Migration("20250616225410_Adicionando Pagamento")]
-    partial class AdicionandoPagamento
+    [Migration("20250620173718_Tables")]
+    partial class Tables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -148,6 +148,9 @@ namespace TCC_2025.Migrations
                     b.Property<DateTime>("DataPagamento")
                         .HasColumnType("TEXT");
 
+                    b.Property<decimal>("Desconto")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("FuncionarioId")
                         .HasColumnType("INTEGER");
 
@@ -216,6 +219,9 @@ namespace TCC_2025.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("DataVenda")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("Desconto")
                         .HasColumnType("TEXT");
 
                     b.PrimitiveCollection<string>("FormaDePagamento")
