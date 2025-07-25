@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "TCC_2025.Controllers.CaixaController",
+    "Method": "AbrirCaixa",
+    "RelativePath": "api/Caixa/abrir",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TCC_2025.Models.DtoAbertura",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TCC_2025.Controllers.CaixaController",
+    "Method": "FecharCaixa",
+    "RelativePath": "api/Caixa/fechar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TCC_2025.Models.DtoFechamento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TCC_2025.Controllers.CategoriaController",
     "Method": "GetCategoria",
     "RelativePath": "api/Categoria",

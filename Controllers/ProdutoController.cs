@@ -67,6 +67,7 @@ namespace TCC_2025.Controllers
         [HttpPost]
         public async Task<ActionResult<Produto>> PostProduto(Produto produto)
         {
+            
             produto.DataCadastro = DateTime.Now;
             _context.Produto.Add(produto);
             await _context.SaveChangesAsync();

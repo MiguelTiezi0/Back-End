@@ -5,6 +5,68 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Caixa/abrir": {
+      "post": {
+        "tags": [
+          "Caixa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtoAbertura"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtoAbertura"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtoAbertura"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Caixa/fechar": {
+      "post": {
+        "tags": [
+          "Caixa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtoFechamento"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtoFechamento"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtoFechamento"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Categoria": {
       "get": {
         "tags": [
@@ -1371,6 +1433,26 @@
         },
         "additionalProperties": false
       },
+      "DtoAbertura": {
+        "type": "object",
+        "properties": {
+          "valorAbertura": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DtoFechamento": {
+        "type": "object",
+        "properties": {
+          "valorFechamento": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "Funcionario": {
         "type": "object",
         "properties": {
@@ -1387,6 +1469,14 @@
             "nullable": true
           },
           "endereço": {
+            "type": "string",
+            "nullable": true
+          },
+          "bairro": {
+            "type": "string",
+            "nullable": true
+          },
+          "numeroDaCasa": {
             "type": "string",
             "nullable": true
           },
@@ -1460,6 +1550,17 @@
           "totalPago": {
             "type": "number",
             "format": "double"
+          },
+          "desconto": {
+            "type": "number",
+            "format": "double"
+          },
+          "formaDePagamento": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
           },
           "toTalDeVezes": {
             "type": "integer",
@@ -1545,6 +1646,17 @@
             "format": "double"
           },
           "totalPago": {
+            "type": "number",
+            "format": "double"
+          },
+          "formaDeDesconto": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "desconto": {
             "type": "number",
             "format": "double"
           },
