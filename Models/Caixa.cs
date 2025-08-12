@@ -8,6 +8,8 @@
         public DateTime? DataFechamento { get; set; }
         public decimal ValorAbertura { get; set; }
         public decimal ValorFechamento { get; set; }
-        
+
+        public List<MovimentoCaixa> Movimentos { get; set; } = new();
     }
+
 }

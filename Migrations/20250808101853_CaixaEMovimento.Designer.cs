@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TCC_2025.Banco_de_Dados;
 
@@ -10,9 +11,11 @@ using TCC_2025.Banco_de_Dados;
 namespace TCC_2025.Migrations
 {
     [DbContext(typeof(ApplicationDataContext))]
-    partial class ApplicationDataContextModelSnapshot : ModelSnapshot
+    [Migration("20250808101853_CaixaEMovimento")]
+    partial class CaixaEMovimento
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.3");
@@ -40,7 +43,7 @@ namespace TCC_2025.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Caixa", (string)null);
+                    b.ToTable("Caixa");
                 });
 
             modelBuilder.Entity("TCC_2025.Models.Categoria", b =>
@@ -54,7 +57,7 @@ namespace TCC_2025.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categoria", (string)null);
+                    b.ToTable("Categoria");
                 });
 
             modelBuilder.Entity("TCC_2025.Models.Cliente", b =>
@@ -98,7 +101,7 @@ namespace TCC_2025.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cliente", (string)null);
+                    b.ToTable("Cliente");
                 });
 
             modelBuilder.Entity("TCC_2025.Models.Funcionario", b =>
@@ -139,7 +142,7 @@ namespace TCC_2025.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Funcionario", (string)null);
+                    b.ToTable("Funcionario");
                 });
 
             modelBuilder.Entity("TCC_2025.Models.Itens_Venda", b =>
@@ -162,7 +165,7 @@ namespace TCC_2025.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Itens_Venda", (string)null);
+                    b.ToTable("Itens_Venda");
                 });
 
             modelBuilder.Entity("TCC_2025.Models.MovimentoCaixa", b =>
@@ -192,7 +195,7 @@ namespace TCC_2025.Migrations
 
                     b.HasIndex("CaixaId");
 
-                    b.ToTable("MovimentoCaixa", (string)null);
+                    b.ToTable("MovimentoCaixa");
                 });
 
             modelBuilder.Entity("TCC_2025.Models.Pagamento", b =>
@@ -227,7 +230,7 @@ namespace TCC_2025.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Pagamento", (string)null);
+                    b.ToTable("Pagamento");
                 });
 
             modelBuilder.Entity("TCC_2025.Models.Produto", b =>
@@ -268,7 +271,7 @@ namespace TCC_2025.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Produto", (string)null);
+                    b.ToTable("Produto");
                 });
 
             modelBuilder.Entity("TCC_2025.Models.Venda", b =>
@@ -309,7 +312,7 @@ namespace TCC_2025.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Venda", (string)null);
+                    b.ToTable("Venda");
                 });
 
             modelBuilder.Entity("TCC_2025.Models.MovimentoCaixa", b =>

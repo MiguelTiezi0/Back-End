@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Linq;
+using System.Threading.Tasks;
 using TCC_2025.Banco_de_Dados;
 using TCC_2025.Models;
 
@@ -21,14 +22,9 @@ namespace TCC_2025.Controllers
         [HttpPost("abrir")]
         public async Task<IActionResult> AbrirCaixa([FromBody] DtoAbertura dto)
         {
-            // Verifica se já existe caixa aberto
-            var caixaAberto = await _context.Caixa
-                .FirstOrDefaultAsync(c => c.Aberto);
-
+            var caixaAberto = await _context.Caixa.FirstOrDefaultAsync(c => c.Aberto);
             if (caixaAberto != null)
-            {
                 return BadRequest("Já existe um caixa aberto.");
-            }
 
             var novoCaixa = new Caixa
             {
@@ -42,12 +38,11 @@ namespace TCC_2025.Controllers
 
             return Ok(novoCaixa);
         }
+
         [HttpPost("fechar")]
         public async Task<IActionResult> FecharCaixa([FromBody] DtoFechamento dto)
         {
-            var caixa = await _context.Caixa
-                .FirstOrDefaultAsync(c => c.Aberto);
-
+            var caixa = await _context.Caixa.FirstOrDefaultAsync(c => c.Aberto);
             if (caixa == null)
                 return BadRequest("Não há caixa aberto.");
 
@@ -67,5 +62,85 @@ namespace TCC_2025.Controllers
             });
         }
 
+        [HttpPost("entrada")]
+        public async Task<IActionResult> AdicionarEntrada([FromBody] DtoMovimentoCaixa dto)
+        {
+            var caixaAberto = await _context.Caixa.FirstOrDefaultAsync(c => c.Aberto);
+            if (caixaAberto == null)
+                return BadRequest("Não há caixa aberto.");
+
+            var movimento = new MovimentoCaixa
+            {
+                CaixaId = caixaAberto.Id,
+                Valor = Math.Abs(dto.Valor),
+                Tipo = "Entrada",
+                Descricao = dto.Descricao,
+                Data = DateTime.Now
+            };
+
+            _context.MovimentoCaixa.Add(movimento);
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                movimento.Id,
+                movimento.Descricao,
+                movimento.Valor,
+                movimento.Tipo,
+                movimento.Data
+            });
+        }
+
+        [HttpPost("saida")]
+        public async Task<IActionResult> AdicionarSaida([FromBody] DtoMovimentoCaixa dto)
+        {
+            var caixaAberto = await _context.Caixa.FirstOrDefaultAsync(c => c.Aberto);
+            if (caixaAberto == null)
+                return BadRequest("Não há caixa aberto.");
+
+            var movimento = new MovimentoCaixa
+            {
+                CaixaId = caixaAberto.Id,
+                Valor = dto.Tipo == "Saída" ? -Math.Abs(dto.Valor) : Math.Abs(dto.Valor),
+                Tipo = dto.Tipo,
+                Descricao = dto.Descricao,
+                Data = DateTime.Now
+            };
+
+            _context.MovimentoCaixa.Add(movimento);
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                movimento.Id,
+                movimento.Descricao,
+                movimento.Valor,
+                movimento.Tipo,
+                movimento.Data
+            });
+        }
+
+        [HttpGet("aberto")]
+        public async Task<IActionResult> GetCaixaAberto()
+        {
+            var caixa = await _context.Caixa
+                .Include(c => c.Movimentos)
+                .FirstOrDefaultAsync(c => c.Aberto);
+
+            if (caixa == null)
+                return NotFound("Não há caixa aberto.");
+
+            decimal totalMovimentacoes = caixa.Movimentos?.Sum(m => m.Valor) ?? 0;
+            decimal valorAtual = caixa.ValorAbertura + totalMovimentacoes;
+
+            return Ok(new
+            {
+                caixa.Id,
+                caixa.DataAbertura,
+                caixa.ValorAbertura,
+                TotalMovimentacoes = totalMovimentacoes,
+                ValorAtual = valorAtual
+            });
+        }
     }
 }
