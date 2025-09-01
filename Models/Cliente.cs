@@ -14,5 +14,9 @@
         public decimal TotalGasto { get; set; }
         public decimal TotalPago { get; set; }
         public decimal TotalDevido { get; set; }
+
+        public string Usuario { get; set; }
+        public string Senha { get; set; }
+        public NivelAcesso NivelAcesso { get; set; }
     }
 }

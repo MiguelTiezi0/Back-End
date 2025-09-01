@@ -14,6 +14,9 @@
         public decimal Salário { get; set; }
         public DateTime DataDeNascimento { get; set; }
         public bool Ativo { get; set; }
+        public string Usuario { get; set; }
+        public string Senha { get; set; }
+        public NivelAcesso NivelAcesso { get; set; }
 
     }
 }

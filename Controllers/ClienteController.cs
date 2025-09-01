@@ -78,6 +78,7 @@ namespace TCC_2025.Controllers
         [HttpPost]
         public async Task<ActionResult<Cliente>> PostCliente(Cliente cliente)
         {
+            cliente.NivelAcesso = NivelAcesso.Cliente;
             _context.Cliente.Add(cliente);
             await _context.SaveChangesAsync();
 
