@@ -16,6 +16,9 @@ namespace TCC_2025.Banco_de_Dados
         public DbSet<Pagamento> Pagamento { get; set; }
         public DbSet<Caixa> Caixa { get; set; }
         public DbSet<MovimentoCaixa> MovimentoCaixa { get; set; }
+        public DbSet<TCC_2025.Models.Fornecedor> Fornecedor { get; set; } = default!;
+        public DbSet<Compra> Compra { get; set; }
+        public DbSet<Itens_Compra> Itens_Compra { get; set; }
 
 
 

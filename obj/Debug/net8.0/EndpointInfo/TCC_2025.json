@@ -5,6 +5,37 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Caixa/abrir": {
       "post": {
         "tags": [
@@ -60,6 +91,80 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Caixa/entrada": {
+      "post": {
+        "tags": [
+          "Caixa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtoMovimentoCaixa"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtoMovimentoCaixa"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtoMovimentoCaixa"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Caixa/saida": {
+      "post": {
+        "tags": [
+          "Caixa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtoMovimentoCaixa"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtoMovimentoCaixa"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtoMovimentoCaixa"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Caixa/aberto": {
+      "get": {
+        "tags": [
+          "Caixa"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -807,6 +912,41 @@
         }
       }
     },
+    "/api/MovimentoCaixa/por-caixa/{caixaId}": {
+      "get": {
+        "tags": [
+          "MovimentoCaixa"
+        ],
+        "parameters": [
+          {
+            "name": "caixaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MovimentoCaixa/todos": {
+      "get": {
+        "tags": [
+          "MovimentoCaixa"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Pagamento": {
       "get": {
         "tags": [
@@ -1429,6 +1569,17 @@
           "totalDevido": {
             "type": "number",
             "format": "double"
+          },
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          },
+          "nivelAcesso": {
+            "$ref": "#/components/schemas/NivelAcesso"
           }
         },
         "additionalProperties": false
@@ -1449,6 +1600,29 @@
           "valorFechamento": {
             "type": "number",
             "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DtoMovimentoCaixa": {
+        "required": [
+          "tipo",
+          "valor"
+        ],
+        "type": "object",
+        "properties": {
+          "valor": {
+            "type": "number",
+            "format": "double"
+          },
+          "tipo": {
+            "minLength": 1,
+            "pattern": "Entrada|Saída",
+            "type": "string"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1498,6 +1672,17 @@
           },
           "ativo": {
             "type": "boolean"
+          },
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          },
+          "nivelAcesso": {
+            "$ref": "#/components/schemas/NivelAcesso"
           }
         },
         "additionalProperties": false
@@ -1527,6 +1712,30 @@
           }
         },
         "additionalProperties": false
+      },
+      "LoginRequest": {
+        "type": "object",
+        "properties": {
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NivelAcesso": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "Pagamento": {
         "type": "object",

@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "DzXPrH8jXXDLRQNGP0NhXAw9MvLfFIqI9nGxNrRoWVg=",
-  "Source": "TCC_2025",
-  "BasePath": "_content/TCC_2025",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"4yws6Vb3J6Qs0cJNxNz8mlBcF0P9ymCrDXgLTHwLqBQ=","Source":"TCC_2025","BasePath":"_content/TCC_2025","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

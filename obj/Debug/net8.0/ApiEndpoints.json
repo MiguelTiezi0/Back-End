@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "SeuProjeto.Api.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SeuProjeto.Api.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TCC_2025.Controllers.CaixaController",
+    "Method": "GetCaixaAberto",
+    "RelativePath": "api/Caixa/aberto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TCC_2025.Controllers.CaixaController",
     "Method": "AbrirCaixa",
     "RelativePath": "api/Caixa/abrir",
@@ -17,6 +43,22 @@
   },
   {
     "ContainingType": "TCC_2025.Controllers.CaixaController",
+    "Method": "AdicionarEntrada",
+    "RelativePath": "api/Caixa/entrada",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TCC_2025.Models.DtoMovimentoCaixa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TCC_2025.Controllers.CaixaController",
     "Method": "FecharCaixa",
     "RelativePath": "api/Caixa/fechar",
     "HttpMethod": "POST",
@@ -26,6 +68,22 @@
       {
         "Name": "dto",
         "Type": "TCC_2025.Models.DtoFechamento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TCC_2025.Controllers.CaixaController",
+    "Method": "AdicionarSaida",
+    "RelativePath": "api/Caixa/saida",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TCC_2025.Models.DtoMovimentoCaixa",
         "IsRequired": true
       }
     ],
@@ -465,6 +523,32 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TCC_2025.Controllers.MovimentoCaixaController",
+    "Method": "GetPorCaixa",
+    "RelativePath": "api/MovimentoCaixa/por-caixa/{caixaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "caixaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TCC_2025.Controllers.MovimentoCaixaController",
+    "Method": "GetTodos",
+    "RelativePath": "api/MovimentoCaixa/todos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
