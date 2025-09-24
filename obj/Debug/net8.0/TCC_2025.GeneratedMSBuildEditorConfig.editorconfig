@@ -17,37 +17,55 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TCC_2025
 build_property.RootNamespace = TCC_2025
-build_property.ProjectDir = C:\Users\Rauni\Desktop\TCC\Back-End\
+build_property.ProjectDir = C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Rauni\Desktop\TCC\Back-End
+build_property.MSBuildProjectDirectory = C:\Users\srmig\OneDrive\Área de Trabalho\TCC\Trabalhos\Trabalho\Back-End
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Rauni/Desktop/TCC/Back-End/Views/MovimentoCaixa/Create.cshtml]
+[C:/Users/srmig/OneDrive/Área de Trabalho/TCC/Trabalhos/Trabalho/Back-End/Views/Fornecedor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/srmig/OneDrive/Área de Trabalho/TCC/Trabalhos/Trabalho/Back-End/Views/Fornecedor/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/srmig/OneDrive/Área de Trabalho/TCC/Trabalhos/Trabalho/Back-End/Views/Fornecedor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/srmig/OneDrive/Área de Trabalho/TCC/Trabalhos/Trabalho/Back-End/Views/Fornecedor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/srmig/OneDrive/Área de Trabalho/TCC/Trabalhos/Trabalho/Back-End/Views/Fornecedor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/srmig/OneDrive/Área de Trabalho/TCC/Trabalhos/Trabalho/Back-End/Views/MovimentoCaixa/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvQ2FpeGFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rauni/Desktop/TCC/Back-End/Views/MovimentoCaixa/Delete.cshtml]
+[C:/Users/srmig/OneDrive/Área de Trabalho/TCC/Trabalhos/Trabalho/Back-End/Views/MovimentoCaixa/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvQ2FpeGFcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rauni/Desktop/TCC/Back-End/Views/MovimentoCaixa/Details.cshtml]
+[C:/Users/srmig/OneDrive/Área de Trabalho/TCC/Trabalhos/Trabalho/Back-End/Views/MovimentoCaixa/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvQ2FpeGFcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rauni/Desktop/TCC/Back-End/Views/MovimentoCaixa/Edit.cshtml]
+[C:/Users/srmig/OneDrive/Área de Trabalho/TCC/Trabalhos/Trabalho/Back-End/Views/MovimentoCaixa/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvQ2FpeGFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rauni/Desktop/TCC/Back-End/Views/MovimentoCaixa/Index.cshtml]
+[C:/Users/srmig/OneDrive/Área de Trabalho/TCC/Trabalhos/Trabalho/Back-End/Views/MovimentoCaixa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvQ2FpeGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rauni/Desktop/TCC/Back-End/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/srmig/OneDrive/Área de Trabalho/TCC/Trabalhos/Trabalho/Back-End/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
