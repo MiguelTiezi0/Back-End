@@ -43,7 +43,6 @@ namespace TCC_2025.Controllers
         }
 
         // PUT: api/Compras/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCompra(int id, Compra compra)
         {
@@ -74,7 +73,6 @@ namespace TCC_2025.Controllers
         }
 
         // POST: api/Compras
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Compra>> PostCompra(Compra compra)
         {
@@ -90,15 +88,48 @@ namespace TCC_2025.Controllers
         {
             var compra = await _context.Compra.FindAsync(id);
             if (compra == null)
-            {
                 return NotFound();
-            }
 
+            // Busca os itens da compra
+            var itensCompra = await _context.Itens_Compra
+                .Where(ic => ic.CompraId == id)
+                .ToListAsync();
+
+            // Remove os itens relacionados
+            _context.Itens_Compra.RemoveRange(itensCompra);
+
+            // Remove a compra
             _context.Compra.Remove(compra);
+
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
+
+        /// <summary>
+        /// Novo endpoint: exclui todos os itens de uma compra, sem excluir a compra.
+        /// Útil para edição (reset dos itens).
+        /// </summary>
+        /// 
+
+        // DELETE: api/Itens_Compra/deleteByCompra/
+        [HttpDelete("deleteByCompra/{compraId}")]
+        public async Task<IActionResult> DeleteByCompra(int compraId)
+        {
+            var itens = await _context.Itens_Compra
+                .Where(i => i.CompraId == compraId) // ajuste o nome da propriedade se for diferente
+                .ToListAsync();
+
+            // Retorna NoContent mesmo que não existam itens — evita que o frontend interprete como erro
+            if (!itens.Any())
+                return NoContent();
+
+            _context.Itens_Compra.RemoveRange(itens);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
 
         private bool CompraExists(int id)
         {
