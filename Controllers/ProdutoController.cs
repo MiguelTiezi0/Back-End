@@ -44,6 +44,7 @@ namespace TCC_2025.Controllers
 
         // PUT: api/Produto/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+  
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProduto(int id, Produto produto)
         {
@@ -54,13 +55,22 @@ namespace TCC_2025.Controllers
             if (produtoDb == null)
                 return NotFound();
 
+            // Atualiza todos os campos necessários
+            produtoDb.Descricao = produto.Descricao;
+            produtoDb.Cor = produto.Cor;
+            produtoDb.Tamanho = produto.Tamanho;
             produtoDb.Quantidade = produto.Quantidade;
-            // Atualize outros campos se necessário
+            produtoDb.PreçoCusto = produto.PreçoCusto;
+            produtoDb.PreçoVenda = produto.PreçoVenda;
+            produtoDb.IdFornecedor = produto.IdFornecedor; // <- aqui você atualiza o fornecedor
+            produtoDb.CategoriaId = produto.CategoriaId;   // se precisar atualizar categoria
+            produtoDb.IdCompra = produto.IdCompra;
 
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
+
 
         // POST: api/Produto
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
